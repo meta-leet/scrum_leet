@@ -47,6 +47,3 @@ gem 'mongoid', "~> 4.0.0"
 
 gem 'puma'
 
-# Web components with asset pipeline
-gem "emcee"
-
