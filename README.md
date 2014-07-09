@@ -1,39 +1,41 @@
+[![Build Status](https://travis-ci.org/meta-leet/scrum_leet.svg?branch=master)](https://travis-ci.org/meta-leet/scrum_leet)
+
 Exposes Scrum tool through API.
 
 In active development, not yet ready.
 
-Resources :
+## Resources :
 
-List of products
-/products/
-Array of product Names
+* List of products
+  * /products/
+  * Array of product Names
 
-Product 
-/product/{product-name}/
-A product must have name
-A product may have description
-
-
-List of features in product's backlog
-/products/{product-name}/backlog
+* Product 
+  * /product/{product-name}/
+  * A product must have name
+  * A product may have description
 
 
-List of product's sprints
-/products/{product-name}/sprints
+* List of features in product's backlog
+  * /products/{product-name}/backlog
 
-Sprint
-/products/{product-name}/sprints/{sprint-label}
 
-Sprint Features
-/products/{product-name}/sprints/{sprint-label}/features
+* List of product's sprints
+  * /products/{product-name}/sprints
 
-Feature
-/feature/{feature-id}
-Have description
-May refer to other resources ( hyperlinks )
-Must belong to backlog xor sprint ( which itself belongs to product )
-Must Have state
-May Have Scale
+* Sprint
+  * /products/{product-name}/sprints/{sprint-label}
+
+* Sprint Features
+  * /products/{product-name}/sprints/{sprint-label}/features
+
+* Feature
+  * /feature/{feature-id}
+  * Have description
+  * May refer to other resources ( hyperlinks )
+  * Must belong to backlog xor sprint ( which itself belongs to product )
+  * Must Have state
+  * May Have Scale
 
 
 
