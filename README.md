@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/meta-leet/scrum_leet.svg?branch=master)](https://travis-ci.org/meta-leet/scrum_leet)
 
+[![Code Climate](https://codeclimate.com/github/meta-leet/scrum_leet.png)](https://codeclimate.com/github/meta-leet/scrum_leet)
+
 Exposes Scrum tool through API.
 
 In active development, not yet ready.
