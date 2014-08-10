@@ -17,7 +17,7 @@ describe "/products", :type => :request do
     it "respond with collection name" do
       get "/products"
       message = JSON.parse(response.body)
-      expect(message['_embeded']["products"].first["name"]).to match(/Scrum Leet/)
+      expect(message['_embedded']["products"].first["name"]).to match(/Scrum Leet/)
     end
 
   end
@@ -55,6 +55,11 @@ describe "/products", :type => :request do
   context "DELETE" do
     context "on successful request" do
       let(:product) { create(:product) }
+
+      it "responds with 200 status code" do
+        delete '/products/' + product.id
+        expect(response.code).to eql "200"
+      end
 
       it "responds with delete product" do
         delete '/products/' + product.id

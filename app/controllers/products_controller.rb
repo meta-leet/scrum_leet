@@ -17,4 +17,8 @@ class ProductsController < ApplicationController
     @product.delete
   end
 
+  def show
+    @product = Product.find(params[:id])
+  end
+
 end
